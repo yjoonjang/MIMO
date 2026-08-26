@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# oh-my-claudecode local state
+.omc/
+
+# data & outputs
+data/
+outputs/
+results*/
+
