@@ -2,7 +2,7 @@
 
 # MIMO
 
-### Multilingual Information Retrieval via Monolingual Objectives
+### MIMO: Multilingual Information Retrieval via Monolingual Objectives
 
 [![EMNLP 2026](https://img.shields.io/badge/EMNLP%202026-Main%20Conference-8A2BE2.svg)](https://2026.emnlp.org/)
 [![arXiv](https://img.shields.io/badge/arXiv-2605.31171-b31b1b.svg)](https://arxiv.org/abs/2605.31171)
