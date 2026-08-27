@@ -92,12 +92,13 @@ d_emb = model.encode(["relevant document in any language"], normalize_embeddings
 scores = q_emb @ d_emb.T
 ```
 
-## Released models
+## Released artifacts
 
-| Model | Link |
+| Artifact | Link |
 |---|---|
 | MIMO (xlm-roberta-large) | [yjoonjang/MIMO-xlm-roberta-large](https://huggingface.co/yjoonjang/MIMO-xlm-roberta-large) |
 | MIMO (mmBERT-base) | [yjoonjang/MIMO-mmBERT-base](https://huggingface.co/yjoonjang/MIMO-mmBERT-base) |
+| MLIR evaluation benchmarks | [yjoonjang/mlir-benchmarks](https://huggingface.co/datasets/yjoonjang/mlir-benchmarks) |
 
 ## Project structure
 
