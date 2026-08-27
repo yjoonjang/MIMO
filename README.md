@@ -11,7 +11,7 @@
 [![Models](https://img.shields.io/badge/🤗%20HuggingFace-Models-yellow.svg)](https://huggingface.co/yjoonjang/MIMO-xlm-roberta-large)
 [![Dataset](https://img.shields.io/badge/🤗%20HuggingFace-Benchmarks-yellow.svg)](https://huggingface.co/datasets/yjoonjang/mlir-benchmarks)
 
-<img src="assets/mimo.png" width="88%" alt="MIMO problem definition" />
+<img src="assets/mimo.png" width="60%" alt="MIMO problem definition" />
 
 <b>Official implementation of the <a href="https://2026.emnlp.org/">EMNLP 2026</a> (Main Conference) paper.</b>
 
