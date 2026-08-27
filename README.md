@@ -1,6 +1,33 @@
-# MIMO: Multilingual Information Retrieval via Monolingual Objectives
+<div align="center">
 
-Official implementation of **"MIMO: Multilingual Information Retrieval via Monolingual Objectives"** (EMNLP 2026, Main Conference).
+# 🌐 MIMO
+
+### Multilingual Information Retrieval via Monolingual Objectives
+
+[![EMNLP 2026](https://img.shields.io/badge/EMNLP%202026-Main%20Conference-8A2BE2.svg)](https://2026.emnlp.org/)
+[![arXiv](https://img.shields.io/badge/arXiv-2605.31171-b31b1b.svg)](https://arxiv.org/abs/2605.31171)
+[![License: MIT](https://img.shields.io/badge/Code-MIT-green.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
+[![Models](https://img.shields.io/badge/🤗%20HuggingFace-Models-yellow.svg)](https://huggingface.co/yjoonjang/MIMO-xlm-roberta-large)
+[![Dataset](https://img.shields.io/badge/🤗%20HuggingFace-Benchmarks-yellow.svg)](https://huggingface.co/datasets/yjoonjang/mlir-benchmarks)
+[![Stars](https://img.shields.io/github/stars/yjoonjang/MIMO?style=social)](https://github.com/yjoonjang/MIMO/stargazers)
+
+<b>Official implementation of the <a href="https://2026.emnlp.org/">EMNLP 2026</a> (Main Conference) paper.</b>
+
+<em>Anchor a multilingual student to a stable English semantic space: knowledge distillation decides the geometry, cross-lingual contrastive learning sharpens the retrieval.</em>
+
+<b><a href="https://arxiv.org/abs/2605.31171">📄 Paper</a> · <a href="#overview">✨ Overview</a> · <a href="#installation">⚙️ Installation</a> · <a href="#data-preparation">📦 Data</a> · <a href="#training">🚀 Training</a> · <a href="#evaluation">📊 Evaluation</a> · <a href="#citation">📌 Citation</a></b>
+
+</div>
+
+---
+
+## News
+
+- **2026-08** · Accepted to **EMNLP 2026** (Main Conference). Code, [models](https://huggingface.co/yjoonjang/MIMO-xlm-roberta-large), and [MLIR benchmarks](https://huggingface.co/datasets/yjoonjang/mlir-benchmarks) are public.
+- **2026-05** · Paper released on [arXiv](https://arxiv.org/abs/2605.31171).
+
+## Overview
 
 MIMO is a two-stage training framework for Multilingual Information Retrieval (MLIR) that anchors a multilingual student model to the stable English semantic space of a high-performing teacher (Qwen3-Embedding-8B):
 
@@ -125,7 +152,8 @@ scores = q_emb @ d_emb.T
   title     = {{MIMO}: Multilingual Information Retrieval via Monolingual Objectives},
   author    = {Jang, Youngjoon and Hong, Seongtae and Lim, Heuiseok},
   booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
-  year      = {2026}
+  year      = {2026},
+  url       = {https://arxiv.org/abs/2605.31171}
 }
 ```
 
