@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌐 MIMO
+# MIMO
 
 ### Multilingual Information Retrieval via Monolingual Objectives
 
@@ -10,13 +10,10 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![Models](https://img.shields.io/badge/🤗%20HuggingFace-Models-yellow.svg)](https://huggingface.co/yjoonjang/MIMO-xlm-roberta-large)
 [![Dataset](https://img.shields.io/badge/🤗%20HuggingFace-Benchmarks-yellow.svg)](https://huggingface.co/datasets/yjoonjang/mlir-benchmarks)
-[![Stars](https://img.shields.io/github/stars/yjoonjang/MIMO?style=social)](https://github.com/yjoonjang/MIMO/stargazers)
+
+<img src="assets/mimo.png" width="88%" alt="MIMO problem definition" />
 
 <b>Official implementation of the <a href="https://2026.emnlp.org/">EMNLP 2026</a> (Main Conference) paper.</b>
-
-<em>Anchor a multilingual student to a stable English semantic space: knowledge distillation decides the geometry, cross-lingual contrastive learning sharpens the retrieval.</em>
-
-<b><a href="https://arxiv.org/abs/2605.31171">📄 Paper</a> · <a href="#overview">✨ Overview</a> · <a href="#installation">⚙️ Installation</a> · <a href="#data-preparation">📦 Data</a> · <a href="#training">🚀 Training</a> · <a href="#evaluation">📊 Evaluation</a> · <a href="#citation">📌 Citation</a></b>
 
 </div>
 
