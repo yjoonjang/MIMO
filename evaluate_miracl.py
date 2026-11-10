@@ -53,6 +53,29 @@ def evaluate_miracl(
 	out_path = os.path.join(model_output_dir, "MIRACLRetrievalHardNegatives.v2.json")
 
 	if os.path.exists(out_path) and not overwrite:
+		retry = "Use --overwrite to re-run and replace this result."
+		try:
+			with open(out_path) as f:
+				cached = json.load(f)
+		except (OSError, ValueError) as exc:
+			raise ValueError(f"Cannot read MIRACL cache {out_path}: {exc}. {retry}") from exc
+
+		saved_languages = cached.get("languages") if isinstance(cached, dict) else None
+		if not isinstance(saved_languages, list) or not all(
+			isinstance(lang, str) and lang.strip() for lang in saved_languages
+		):
+			raise ValueError(f"MIRACL cache {out_path} has invalid or missing languages metadata. {retry}")
+
+		# Compare the effective subset using the same supported IDs as MTEB task selection.
+		saved = LANG_TO_ISO.keys() & saved_languages
+		requested = LANG_TO_ISO.keys() & languages
+		if not saved:
+			raise ValueError(f"MIRACL cache {out_path} has no supported languages in its metadata. {retry}")
+		if saved != requested:
+			raise ValueError(
+				f"MIRACL cache {out_path} has cached languages {sorted(saved)}, "
+				f"but requested languages are {sorted(requested)}. {retry}"
+			)
 		logger.info("Already evaluated MIRACL, skipping (delete %s or use --overwrite to re-run)", out_path)
 		return
 
